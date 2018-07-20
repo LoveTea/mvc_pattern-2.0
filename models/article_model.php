@@ -12,12 +12,12 @@ class ArticleModel extends Model {
     }
 
     public function getListModel($offset, $limit) {
-        $result = $this->db->query("SELECT * from articles ORDER BY time DESC LIMIT $offset, $limit");
+        $result = $this->db->query("SELECT id, title, announce, time from articles ORDER BY time DESC LIMIT $offset, $limit");
         return $result->fetchAll();
     }
 
     public function getArticleModel($id) {
-        $stmt = $this->db->prepare("SELECT * FROM articles WHERE id = :id");
+        $stmt = $this->db->prepare("SELECT id, title, text  FROM articles WHERE id = :id");
         $stmt->execute(['id'  => $id]);
         $result = $stmt->fetch();
         return $result;
