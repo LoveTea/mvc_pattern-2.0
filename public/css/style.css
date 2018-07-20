@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #eee;
+    font-family: 'Georgia';
+}
+
+.wrapper {
+    width: 85%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid black;
+    padding-bottom: 25px;
+}
+
+header .logo {
+    width: 100px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 25px;
+}
+
+
+main {
+    padding: 25px;
+    position: relative;
+    padding-bottom: 75px;
+}
+
+.article {
+    border-bottom: 1px solid black;
+}
+
+.article .time {
+    display: inline-block;
+    background-color: #DCDCDC;
+}
+
+.article .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.article a {
+    color: black;
+    text-decoration: none;
+}
+
+.pagination {
+    position: absolute;
+    bottom: 5px;
+}
+
+footer {
+    text-align: center;
+    background-color: #ddd;
+    padding: 25px 0;
+}
+
+.alert-danger {
+    width: 230px;
+    margin-top: 10px;
+}
+
+.admin-panel {
+    text-align: center;
+    border: 1px solid black;
+
+}
+
+.admin-panel a {
+    color: black;
+    text-decoration: none;
+    margin-right: 25px;
+}
+
+.form-find-news {
+    margin-bottom: 25px;
+}
+
