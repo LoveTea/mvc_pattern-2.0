@@ -24,7 +24,6 @@ class AdminModel extends Model {
     }
 
     public function updateNewsModel($data) {
-        echo $data['id'];
         $stmt = $this->db->prepare("UPDATE articles SET title=:title, announce=:announce, text=:text WHERE id=:id");
         $stmt->execute(['id' => $data['id'], 'title' => $data['title'], 'announce' => $data['announce'], 'text' => $data['text']]);
        
